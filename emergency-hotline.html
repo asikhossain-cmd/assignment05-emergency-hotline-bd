@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
+
+    <!-- External Style File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
 </head>
 <body>
-    
+    <section>
+        <header>
+            <nav class="header-section max-w-[1280px] h-18 mx-auto flex justify-between items-center">
+                <div class="site-logo flex items-center gap-5">
+                    <img src="assets/logo.png" alt="Site Logo" class="w-13 h-13">
+                    <p class="font-extrabold text-2xl font emergency-logo text-green-900 leading-[29px]">Emergency <br> Service</p>
+                </div>
+                <div class="header-navigation flex gap-10">
+                    <button class="favorite-btn btn flex items-center rounded-3xl font-bold text-base gap-2 bg-green-50 border-none">0 <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-8 h-8"></button>
+                    <button class="coin-btn btn flex items-center rounded-3xl font-bold text-base gap-2 bg-green-50 border-none">100 <img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-8 h-8"></button>
+                    <button class="copy-btn btn rounded-3xl font-bold text-base bg-green-500 text-white text-center font-semibold border-none">0 Copy</button>
+                </div>
+            </nav>
+
+            <div class="header-banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-2 justify-center items-center">
+                <img src="assets/logo-dark.png" alt="Website-Logo" class="w-20 h-20 mt-5">
+                <h1 class="text-white font-black">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="text-white mb-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </header>
+    </section>
+
+    <script src="app-functionality.js"></script>
 </body>
 </html>
