@@ -39,9 +39,9 @@
                 </div>
             </nav>
 
-            <div class="header-banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-2 justify-center items-center">
+            <div class="header-banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-3 justify-center items-center">
                 <img src="assets/logo-dark.png" alt="Website-Logo" class="w-20 h-20 mt-5">
-                <h1 class="text-white font-black">জরুরি সেবা ডিরেক্টরি</h1>
+                <h1 class="text-white font-black text-4xl">জরুরি সেবা ডিরেক্টরি</h1>
                 <p class="text-white mb-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
         </header>
@@ -49,8 +49,8 @@
     <!-- Header Full Design End -->
 
     <!-- Emergency Call Card Design Start -->
-    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6]">
-        <div class="card-section p-8 grid grid-cols-3 gap-7">
+    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6] grid p-8 gap-7">
+        <div class="card-section grid grid-cols-3 gap-7">
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
@@ -234,8 +234,16 @@
         </div>
 
         <!-- Call History Section Start -->
-        <div class="call-history-section">
-
+        <div class="call-history-section max-w-[425px] h-full bg-white rounded-xl p-5 box-border shadow-xl">
+            <div class="call-history-header flex justify-between w-full max-h-26">
+                <div class="call-history-title flex items-center gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <p class="font-semibold">Call History</p>
+                </div>
+                <div class="call-history-clear-btn">
+                    <button class="btn bg-[#00a63e] text-white rounded-4xl p-3 px-5">Clear</button>
+                </div>
+            </div>
         </div>
         <!-- Call History Section End -->
     </section>

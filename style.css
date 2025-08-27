@@ -9,3 +9,11 @@
 .call-button, .copy-button {
     font-family: 'Roboto', sans-serif;
 }
+
+.call-cards {
+    grid-template-columns: 3fr 1fr;
+}
+
+.call-history-title p {
+    font-family: 'Roboto', sans-serif;
+}
