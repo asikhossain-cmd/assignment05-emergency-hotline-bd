@@ -49,32 +49,195 @@
     <!-- Header Full Design End -->
 
     <!-- Emergency Call Card Design Start -->
-    <section class="call-cards max-w-[1280px] h-auto mx-auto">
-        <div class="card-section">
-            <div class="card-emergency max-w-[445px] max-h-[470px]">
+    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6]">
+        <div class="card-section p-8 grid grid-cols-3 gap-7">
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
-                    <div class="emergency-logo w-[60px] h-[60px] bg-red-300 rounded-2xl flex justify-center items-center">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
                         <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
                     </div>
-                    <div class="favorite-icon w-[60px] h-[60px] rounded-2xl flex justify-center items-center cursor-pointer">
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
-                    <h1 class="text-2xl font-black">জাতীয় জরুরি সেবা</h1>
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
                     <p class="text-gray-600">National Emergency</p>
                     <p class="mt-2 text-3xl font-bold">999</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
-                    <div class="emergency-card-body-buttons">
-                        <button><i></i>Copy</button>
-                        <button><i></i>Call</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
+                <div class="emergency-card-header flex justify-between">
+                    <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                    </div>
+                    <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer" id="favorite-btn">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                </div>
+                <div class="emergency-card-body">
+                    <h1 class="text-2xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-gray-600">National Emergency</p>
+                    <p class="mt-2 text-3xl font-bold">999</p>
+                    <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
+                    <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
+                        <button class="h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Call History Section Start -->
         <div class="call-history-section">
 
         </div>
+        <!-- Call History Section End -->
     </section>
     <!-- Emergency Call Card Design End -->
 

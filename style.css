@@ -5,3 +5,7 @@
 .emergency-card-body p{
     font-family: 'Roboto', sans-serif;
 }
+
+.call-button, .copy-button {
+    font-family: 'Roboto', sans-serif;
+}
