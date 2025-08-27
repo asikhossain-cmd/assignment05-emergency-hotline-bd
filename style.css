@@ -18,3 +18,26 @@
 .call-history-title p {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Applying Style For Call Histories */
+
+.call-blocks {
+    width: full;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.call-blocks-call-title {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.call-blocks-call-number {
+    color: gray;
+    font-size: 14px;
+}
+.call-blocks-date {
+    font-size: 14px;
+}
