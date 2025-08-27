@@ -33,9 +33,9 @@
                     <p class="font-extrabold text-2xl font emergency-logo text-green-900 leading-[29px]">Emergency <br> Service</p>
                 </div>
                 <div class="header-navigation flex gap-10">
-                    <button class="favorite-btn btn flex items-center rounded-3xl font-bold text-base gap-2 bg-green-50 border-none">0 <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-8 h-8"></button>
-                    <button class="coin-btn btn flex items-center rounded-3xl font-bold text-base gap-2 bg-green-50 border-none">100 <img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-8 h-8"></button>
-                    <button class="copy-btn btn rounded-3xl font-bold text-base bg-green-500 text-white text-center font-semibold border-none">0 Copy</button>
+                    <button class="favorite-btn p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none">0 <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-7 h-7"></button>
+                    <button id="coin-life" class="coin-btn p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none">100 <img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-7 h-7"></button>
+                    <button class="copy-btn p-1 px-4 rounded-3xl font-bold text-base bg-[#00a63e] text-white text-center font-semibold border-none">0 Copy</button>
                 </div>
             </nav>
 
@@ -61,13 +61,13 @@
                     </div>
                 </div>
                 <div class="emergency-card-body">
-                    <h1 class="text-xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
+                    <h1 id="national-em-call" class="text-xl font-black mt-3">জাতীয় জরুরি সেবা</h1>
                     <p class="text-gray-600">National Emergency</p>
-                    <p class="mt-2 text-2xl font-bold">999</p>
+                    <p id="national-em-number" class="mt-2 text-2xl font-bold">999</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button id="national-em-call" class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">পুলিশ</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">ফায়ার</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">স্বাস্থ্য</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সহায়তা</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সরকারি</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">বিদ্যুৎ</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">এনজিও</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">পরিবহন</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
                         <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-button text-gray-600 cursor-pointer font-normal" id="copy-btn"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal" id="call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@
                     <p class="font-semibold">Call History</p>
                 </div>
                 <div class="call-history-clear-btn">
-                    <button class="btn bg-[#00a63e] text-white rounded-4xl p-3 px-5">Clear</button>
+                    <button class="bg-[#00a63e] text-white rounded-4xl p-2 px-7 active:translate-y-1 active:translate-x-1 border-none cursor-pointer hover:bg-green-700 ">Clear</button>
                 </div>
             </div>
         </div>
