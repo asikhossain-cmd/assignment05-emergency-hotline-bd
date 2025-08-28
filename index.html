@@ -33,7 +33,7 @@
                     <p class="font-extrabold text-2xl font emergency-logo text-green-900 leading-[29px]">Emergency <br> Service</p>
                 </div>
                 <div class="header-navigation flex gap-10">
-                    <button class="favorite-btn p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none">0 <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-7 h-7"></button>
+                    <button class="p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none"> <span id="header-favourite-count">0</span> <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-7 h-7"></button>
                     <button class="coin-btn p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none"> <span id="coin-life" >100</span><img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-7 h-7"></button>
                     <button class="header-copy-count p-1 px-4 rounded-3xl font-bold text-base bg-[#00a63e] text-white text-center font-semibold border-none"> <span id="header-copy-count">0</span> Copy</button>
                 </div>
@@ -49,15 +49,15 @@
     <!-- Header Full Design End -->
 
     <!-- Emergency Call Card Design Start -->
-    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6] grid p-8 gap-7">
-        <div id="card-section" class="card-section grid grid-cols-3 gap-7">
+    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6] grid sm:flex sm:flex-col md:grid-cols-[3fr_1fr] p-8 gap-7">
+        <div id="card-section" class="card-section sm:grid-cols grid md:grid-cols-3 gap-7">
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/emergency.png" alt="National Emergency Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -77,7 +77,7 @@
                         <img src="assets/police.png" alt="Emergency Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -94,10 +94,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/fire-service.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/fire-service.png" alt="Fire Service Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -114,10 +114,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/ambulance.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/ambulance.png" alt="Ambulance Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -134,10 +134,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/emergency.png" alt="Women and Childred Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -154,10 +154,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/emergency.png" alt="Anti-Corruption Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -174,10 +174,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/emergency.png" alt="Load Shedding Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -194,10 +194,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/brac.png" alt="Brac Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">
@@ -214,10 +214,10 @@
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
-                        <img src="assets/emergency.png" alt="Emergency Card" class="w-8 h-8">
+                        <img src="assets/Bangladesh-Railway.png" alt="Bangladesh Railway Card" class="w-8 h-8">
                     </div>
                     <div class="favorite-icon w-[50px] h-[50px] rounded-2xl flex justify-center items-center cursor-pointer favorite-btn">
-                        <i class="fa-regular fa-heart text-xl"></i>
+                        <i class="fa-regular fa-heart text-xl favorite-btn"></i>
                     </div>
                 </div>
                 <div class="emergency-card-body">

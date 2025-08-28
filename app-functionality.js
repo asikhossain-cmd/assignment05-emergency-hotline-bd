@@ -14,9 +14,6 @@ document.getElementById('card-section')
 
             const getCallNo = getCallButton.parentNode.parentNode.children[2].innerText;
 
-            console.log(getServiceTitle, getCallNo)
-
-
             if(getCoinText === 0 && getCoinText < 20){
                 alert('You Have Insufficient Coin')
                 return;
@@ -118,6 +115,8 @@ document.getElementById('card-section')
         if(event.target.className.includes('copy-btn')) {
             const getButton = event.target;
 
+            // getButton.innerText = 'Copied'
+            
             // Get the card call number
             const getCallNo = getButton.parentNode.parentNode.children[2].innerText;
             navigator.clipboard.writeText(getCallNo);
@@ -133,3 +132,18 @@ document.getElementById('card-section')
     })
 
 // Make Favorite Button Functional
+// // Get the header favourite count
+let getFavouriteCount = parseInt(document.getElementById('header-favourite-count').innerText);
+console.log(getFavouriteCount)
+document.getElementById('card-section')
+    .addEventListener('click', function(event){
+        if(event.target.className.includes('favorite-btn')) {
+            
+            console.log('Button Clicked')
+            // Lets Increase The Favourite Count
+            getFavouriteCount += 1;
+
+            // Lets set it to the header favourite count
+            document.getElementById('header-favourite-count').innerText = getFavouriteCount;
+        }
+    })
