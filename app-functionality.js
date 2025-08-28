@@ -98,3 +98,14 @@ document.getElementById('card-section')
         
 
 })
+
+
+//  Adding Call History Clear Functionality
+
+document.getElementById('call-history-clear-btn')
+    .addEventListener('click', function(){
+        // Get The History Body
+        const getHistoryBody = document.getElementById('call-history-body');
+        
+        getHistoryBody.innerHTML = '';
+    })
