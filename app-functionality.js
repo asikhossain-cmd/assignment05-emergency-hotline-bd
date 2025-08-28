@@ -109,3 +109,27 @@ document.getElementById('call-history-clear-btn')
         
         getHistoryBody.innerHTML = '';
     })
+
+
+// Copy Button Make Functional
+let getCopyCount = parseInt(document.getElementById('header-copy-count').innerText);
+document.getElementById('card-section')
+    .addEventListener('click', function(event){
+        if(event.target.className.includes('copy-btn')) {
+            const getButton = event.target;
+
+            // Get the card call number
+            const getCallNo = getButton.parentNode.parentNode.children[2].innerText;
+            navigator.clipboard.writeText(getCallNo);
+
+            // Make to increase copy number if user click on the copy button
+            // Get the header copy count
+            getCopyCount += 1
+            
+            // Assign it to the header copy
+            document.getElementById('header-copy-count').innerText = getCopyCount;
+            
+        }
+    })
+
+// Make Favorite Button Functional
