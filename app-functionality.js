@@ -289,7 +289,7 @@ document.getElementById('card-section')
             getCopyCountMobile += 1
             
             // Assign it to the header copy
-            document.getElementById('header-copy-count').innerText = getCopyCountMobile;
+            document.getElementById('header-copy-count-mobile').innerText = getCopyCountMobile;
             
         }
     })
