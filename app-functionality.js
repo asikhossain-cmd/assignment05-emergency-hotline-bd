@@ -283,6 +283,7 @@ document.getElementById('card-section')
             // getButton.innerText = 'Copied'
             // Get the card call number
             const getCallNo = getButton.parentNode.parentNode.children[2].innerText;
+            alert('নম্বর কপি হয়েছে' + ': ' + getCallNo)
             navigator.clipboard.writeText(getCallNo);
 
             // Make to increase copy number if user click on the copy button
