@@ -1,5 +1,5 @@
 // Adding The Call Button Functionality
-
+if(window.innerWidth >= 640) {
 document.getElementById('card-section')
     .addEventListener('click', function(event){
         if(event.target.className.includes('call-btn')) {
@@ -145,6 +145,8 @@ document.getElementById('card-section')
         }
     })
 
+}
+
 
 
 
@@ -159,7 +161,7 @@ document.getElementById('card-section')
 
 // For Mobile
 
-
+if(window.innerWidth < 640) {
 // Adding The Call Button Functionality
 
 document.getElementById('card-section')
@@ -321,5 +323,7 @@ horizontalMenu.addEventListener('click', function(){
     getSideBar.classList.toggle('activate-pan');
     
 })
+
+}
 
 
