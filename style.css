@@ -46,13 +46,32 @@
 
 
 /* Three Vertical Design Start */
-.three-horizontal:active .horizontal-two{
+.three-horizontal.activate-button .horizontal-two{
     display: none;
+    transition: 0.1s ease-in-out;
 }
-.three-horizontal:active {
+.three-horizontal.activate-button {
     justify-content: space-between
 }
-.three-horizontal:active .horizontal-one {
-    transform: rotateY(45deg)
+.three-horizontal.activate-button .horizontal-one {
+    transform: rotate(42deg);
+    transform-origin: top left;
+    transition: 0.3s ease-in-out;
+    width: 45px;
+}
+.three-horizontal.activate-button .horizontal-three {
+    transform: rotate(-42deg);
+    transform-origin: bottom left;
+    transition: 0.3s ease-in-out;
+    width: 45px;
 }
 /* Three Vertical Design End */
+
+/* Sidebar show when click */
+#sidebar-section-pan.activate-pan{
+    right: 1%;
+    top: 2.3%;
+    display: block;
+    opacity: 100%;
+    transition: 0.3s ease-in-out;
+}

@@ -151,7 +151,13 @@ document.getElementById('card-section')
 // Side bar show in mobile devices
 
 // Get The Side bar
-const getSideBar = document.getElementById('sidebar-right-pan');
+const getSideBar = document.getElementById('sidebar-section-pan');
 
-document.getElementById('three-horizontal-menu-button').addEventListener('click')
+const horizontalMenu  = document.getElementById('three-horizontal-menu-button') 
+horizontalMenu.addEventListener('click', function(){
+    horizontalMenu.classList.toggle('activate-button');
+    getSideBar.classList.toggle('activate-pan');
+    
+})
+
 

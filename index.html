@@ -29,19 +29,8 @@
     <!---------------------------------------------------- 
                     Sidebar Section Start
     ------------------------------------------------------->
-
-    <!-- Make a three horizontal for show all the time start-->
     <section>
-        <div id="three-horizontal-menu-button" class="three-horizontal h-[50px] w-[70px] bg-gray-300 p-2 flex justify-between flex-col">
-            <div class="horizontal-one h-[3px] w-full bg-black"></div>
-            <div class="horizontal-two h-[3px] w-full bg-black"></div>
-            <div class="horizontal-three h-[3px] w-full bg-black"></div>
-        </div>
-    </section>
-    <!-- Make a three horizontal for show all the time end-->
-
-    <section id="sidebar-right-pan" class="absolute left-[100%] top-[1%] hidden">
-        <div id="sidebar-section" class="sidebar w-[45%] h-[330px] bg-red-100 p-2">
+        <div id="sidebar-section-pan" class="sidebar max-w-[60%] backdrop-blur-md h-[330px] p-2 absolute right-[70%] top-[1%] opacity-0 rounded-md">
             <!-- Sidebar Count Section -->
             <div class="header-navigation flex gap-2">
                 <button class="h-[22px] w-[100px] flex justify-center items-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="header-favourite-count">0</span> <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-4 h-4"></button>
@@ -51,18 +40,18 @@
 
             <!-- Sidebar Call History Section -->
 
-            <div id="call-history-section" class="call-history-section max-w-[425px] h-full mt-3 rounded-md box-border shadow-xl">
+            <div id="call-history-section" class="call-history-section w-full h-full mt-3 rounded-md box-border ">
             <div class="call-history-header flex justify-between w-full max-h-26">
                 <div class="call-history-title flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-sm"></i>
-                    <p class="font-semibold text-sm">Call History</p>
+                    <i class="fa-regular fa-clock text-sm text-white"></i>
+                    <p class="font-semibold text-sm text-white">Call History</p>
                 </div>
                 <div id="call-history-clear-btn">
-                    <button class="bg-[#00a63e] text-white rounded-2xl h-[25px] w-[60px] active:translate-y-1 active:translate-x-1 border-none cursor-pointer hover:bg-green-700 text-sm">Clear</button>
+                    <button class="bg-[#00a63e] text-white rounded-2xl h-[25px] w-[60px] active:translate-y-[1px] active:translate-x-[1px] border-none cursor-pointer hover:bg-green-700 text-sm">Clear</button>
                 </div>
             </div>
 
-            <div id="call-history-body" class="w-full h-full mt-8">
+            <div id="call-history-body" class="w-full h-[200px] mt-8 overflow-scroll text-white">
 
             </div>
         </div>
@@ -74,8 +63,8 @@
     ------------------------------------------------------->
     <section>
         <header>
-            <nav class="header-section max-w-[1280px] h-18 mx-auto flex justify-between items-center">
-                <div class="site-logo flex items-center gap-5 p-2 md:p-0">
+            <nav class="header-section max-w-[1280px] h-18 mx-auto flex justify-between items-center p-2 md:p-0">
+                <div class="site-logo flex items-center gap-5">
                     <img src="assets/logo.png" alt="Site Logo" class="w-13 h-13">
                     <p class="font-extrabold text-2xl font emergency-logo text-green-900 leading-[29px]">Emergency <br> Service</p>
                 </div>
@@ -84,6 +73,14 @@
                     <button class="coin-btn p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none"> <span id="coin-life" >100</span><img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-7 h-7"></button>
                     <button class="header-copy-count p-1 px-4 rounded-3xl font-bold text-base bg-[#00a63e] text-white text-center font-semibold border-none"> <span id="header-copy-count">0</span> Copy</button>
                 </div>
+
+                <!-- Make a three horizontal for show all the time start-->
+                <div id="three-horizontal-menu-button" class="cursor-pointer md:hidden block three-horizontal h-[50px] w-[50px] bg-gray-300 p-2 flex justify-between flex-col">
+                    <div class="horizontal-one h-[3px] w-[full] bg-black"></div>
+                    <div class="horizontal-two h-[3px] w-full bg-black"></div>
+                    <div class="horizontal-three h-[3px] w-full bg-black"></div>
+                </div>
+                <!-- Make a three horizontal for show all the time end-->
             </nav>
 
             <div class="header-banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-3 justify-center items-center">
@@ -113,8 +110,8 @@
                     <p class="mt-2 text-2xl font-bold">999</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সার্বজনীন</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button id="call-btn" class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button id="call-btn" class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-button text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal call-btn"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -133,8 +130,8 @@
                     <p class="mt-2 text-2xl font-bold">999</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">পুলিশ</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -153,8 +150,8 @@
                     <p class="mt-2 text-2xl font-bold">999</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">ফায়ার</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -173,8 +170,8 @@
                     <p class="mt-2 text-2xl font-bold">1994-999999</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">স্বাস্থ্য</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -193,8 +190,8 @@
                     <p class="mt-2 text-2xl font-bold">109</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সহায়তা</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -213,8 +210,8 @@
                     <p class="mt-2 text-2xl font-bold">106</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">সরকারি</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -233,8 +230,8 @@
                     <p class="mt-2 text-2xl font-bold">16216</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">বিদ্যুৎ</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -253,8 +250,8 @@
                     <p class="mt-2 text-2xl font-bold">16445</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">এনজিও</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -273,8 +270,8 @@
                     <p class="mt-2 text-2xl font-bold">163</p>
                     <button class="text-sm text-gray-600 bg-gray-200 p-1 rounded-4xl px-4">পরিবহন</button>
                     <div class="emergency-card-body-buttons flex justify-between gap-1 mt-5">
-                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-1 active:translate-x-1 h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
-                        <button class="hover:bg-green-700 active:translate-y-1 active:translate-x-1 h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
+                        <button class="hover:bg-slate-600 hover:text-white active:translate-y-[1px] active:translate-x-[1px] h-10 w-52 border border-gray-300 rounded-lg copy-btn text-gray-600 cursor-pointer font-normal"  ><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                        <button class="hover:bg-green-700 active:translate-y-[1px] active:translate-x-[1px] h-10 w-52  border border-gray-300 rounded-lg call-btn text-gray-600 cursor-pointer bg-[#00a63e] text-white font-normal"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -288,7 +285,7 @@
                     <p class="font-semibold">Call History</p>
                 </div>
                 <div id="call-history-clear-btn">
-                    <button class="bg-[#00a63e] text-white rounded-4xl p-2 px-7 active:translate-y-1 active:translate-x-1 border-none cursor-pointer hover:bg-green-700">Clear</button>
+                    <button class="bg-[#00a63e] text-white rounded-4xl p-2 px-7 active:translate-y-[1px] active:translate-x-[1px] border-none cursor-pointer hover:bg-green-700">Clear</button>
                 </div>
             </div>
 
