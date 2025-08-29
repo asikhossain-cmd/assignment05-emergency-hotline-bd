@@ -42,3 +42,17 @@
 .call-blocks-date {
     font-size: 14px;
 }
+
+
+
+/* Three Vertical Design Start */
+.three-horizontal:active .horizontal-two{
+    display: none;
+}
+.three-horizontal:active {
+    justify-content: space-between
+}
+.three-horizontal:active .horizontal-one {
+    transform: rotateY(45deg)
+}
+/* Three Vertical Design End */

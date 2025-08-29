@@ -116,7 +116,6 @@ document.getElementById('card-section')
             const getButton = event.target;
 
             // getButton.innerText = 'Copied'
-            
             // Get the card call number
             const getCallNo = getButton.parentNode.parentNode.children[2].innerText;
             navigator.clipboard.writeText(getCallNo);
@@ -134,7 +133,6 @@ document.getElementById('card-section')
 // Make Favorite Button Functional
 // // Get the header favourite count
 let getFavouriteCount = parseInt(document.getElementById('header-favourite-count').innerText);
-console.log(getFavouriteCount)
 document.getElementById('card-section')
     .addEventListener('click', function(event){
         if(event.target.className.includes('favorite-btn')) {
@@ -147,3 +145,13 @@ document.getElementById('card-section')
             document.getElementById('header-favourite-count').innerText = getFavouriteCount;
         }
     })
+
+
+
+// Side bar show in mobile devices
+
+// Get The Side bar
+const getSideBar = document.getElementById('sidebar-right-pan');
+
+document.getElementById('three-horizontal-menu-button').addEventListener('click')
+

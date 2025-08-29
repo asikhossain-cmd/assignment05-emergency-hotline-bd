@@ -23,16 +23,63 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
 </head>
-<body>
+<body class="relative">
     <!-- Header Full Design Start -->
+
+    <!---------------------------------------------------- 
+                    Sidebar Section Start
+    ------------------------------------------------------->
+
+    <!-- Make a three horizontal for show all the time start-->
+    <section>
+        <div id="three-horizontal-menu-button" class="three-horizontal h-[50px] w-[70px] bg-gray-300 p-2 flex justify-between flex-col">
+            <div class="horizontal-one h-[3px] w-full bg-black"></div>
+            <div class="horizontal-two h-[3px] w-full bg-black"></div>
+            <div class="horizontal-three h-[3px] w-full bg-black"></div>
+        </div>
+    </section>
+    <!-- Make a three horizontal for show all the time end-->
+
+    <section id="sidebar-right-pan" class="absolute left-[100%] top-[1%] hidden">
+        <div id="sidebar-section" class="sidebar w-[45%] h-[330px] bg-red-100 p-2">
+            <!-- Sidebar Count Section -->
+            <div class="header-navigation flex gap-2">
+                <button class="h-[22px] w-[100px] flex justify-center items-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="header-favourite-count">0</span> <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-4 h-4"></button>
+                <button class="coin-btn h-[22px] w-[100px] flex items-center justify-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="coin-life" >100</span><img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-4 h-4"></button>
+                <button class="header-copy-count h-[22px] w-[100px] rounded-2xl font-bold text-sm bg-[#00a63e] text-white text-center font-semibold border-none"> <span id="header-copy-count">0</span> Copy</button>
+            </div>
+
+            <!-- Sidebar Call History Section -->
+
+            <div id="call-history-section" class="call-history-section max-w-[425px] h-full mt-3 rounded-md box-border shadow-xl">
+            <div class="call-history-header flex justify-between w-full max-h-26">
+                <div class="call-history-title flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-sm"></i>
+                    <p class="font-semibold text-sm">Call History</p>
+                </div>
+                <div id="call-history-clear-btn">
+                    <button class="bg-[#00a63e] text-white rounded-2xl h-[25px] w-[60px] active:translate-y-1 active:translate-x-1 border-none cursor-pointer hover:bg-green-700 text-sm">Clear</button>
+                </div>
+            </div>
+
+            <div id="call-history-body" class="w-full h-full mt-8">
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------- 
+                    Sidebar Section End
+    ------------------------------------------------------->
     <section>
         <header>
             <nav class="header-section max-w-[1280px] h-18 mx-auto flex justify-between items-center">
-                <div class="site-logo flex items-center gap-5">
+                <div class="site-logo flex items-center gap-5 p-2 md:p-0">
                     <img src="assets/logo.png" alt="Site Logo" class="w-13 h-13">
                     <p class="font-extrabold text-2xl font emergency-logo text-green-900 leading-[29px]">Emergency <br> Service</p>
                 </div>
-                <div class="header-navigation flex gap-10">
+                <div class="header-navigation hidden md:flex gap-10">
                     <button class="p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none"> <span id="header-favourite-count">0</span> <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-7 h-7"></button>
                     <button class="coin-btn p-1 px-3 flex items-center rounded-3xl font-bold text-base gap-2 bg-[#ecfff0] border-none"> <span id="coin-life" >100</span><img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-7 h-7"></button>
                     <button class="header-copy-count p-1 px-4 rounded-3xl font-bold text-base bg-[#00a63e] text-white text-center font-semibold border-none"> <span id="header-copy-count">0</span> Copy</button>
@@ -42,15 +89,15 @@
             <div class="header-banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-3 justify-center items-center">
                 <img src="assets/logo-dark.png" alt="Website-Logo" class="w-20 h-20 mt-5">
                 <h1 class="text-white font-black text-4xl">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class="text-white mb-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                <p class="text-white mb-5 text-center p-2 md:p-0">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
         </header>
     </section>
     <!-- Header Full Design End -->
 
     <!-- Emergency Call Card Design Start -->
-    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6] grid sm:flex sm:flex-col md:grid-cols-[3fr_1fr] p-8 gap-7">
-        <div id="card-section" class="card-section sm:grid-cols-1 grid md:grid-cols-3 gap-7">
+    <section class="call-cards max-w-[1280px] h-auto mx-auto bg-[#f5fff6] grid md:grid-cols-[3fr_1fr] grid-cols-1 p-8 gap-7">
+        <div id="card-section" class="card-section grid-cols-1 grid md:grid-cols-3 gap-7">
             <div class="card-emergency max-w-[425px] max-h-[470px] bg-white rounded-xl p-5 box-border shadow-xl">
                 <div class="emergency-card-header flex justify-between">
                     <div class="emergency-logo w-[50px] h-[50px] bg-red-200 rounded-2xl flex justify-center items-center">
@@ -234,7 +281,7 @@
         </div>
 
         <!-- Call History Section Start -->
-        <div id="call-history-section" class="call-history-section max-w-[425px] h-full bg-white rounded-xl p-5 box-border shadow-xl">
+        <div id="call-history-section" class="hidden md:block call-history-section max-w-[425px] h-full bg-white rounded-xl p-5 box-border shadow-xl">
             <div class="call-history-header flex justify-between w-full max-h-26">
                 <div class="call-history-title flex items-center gap-2">
                     <i class="fa-regular fa-clock"></i>
