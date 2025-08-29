@@ -179,11 +179,11 @@ document.getElementById('card-section')
             const getCallNo = getCallButton.parentNode.parentNode.children[2].innerText;
 
             if(getCoinText === 0 && getCoinText < 20){
-                alert('You Have Insufficient Coin')
+                alert('❌ আপনার পর্যাপ্ত কয়েন নেই । কল করতে কমপক্ষে 20 টা কয়েন লাগবে')
                 return;
             }
 
-            alert(getServiceTitle + "\nCalling to" + " " + getCallNo);
+            alert("📞 Calling" + " " + getServiceTitle  + " " + getCallNo + '...');
             const cutCoin = getCoinText - 20;
             document.getElementById('coin-life-mobile').innerText = cutCoin;
 
