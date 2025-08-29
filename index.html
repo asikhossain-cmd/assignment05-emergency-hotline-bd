@@ -26,41 +26,6 @@
 <body class="relative">
     <!-- Header Full Design Start -->
 
-    <!---------------------------------------------------- 
-                    Sidebar Section Start
-    ------------------------------------------------------->
-    <section>
-        <div id="sidebar-section-pan" class="sidebar max-w-[60%] backdrop-blur-md h-[330px] p-2 absolute right-[70%] top-[1%] opacity-0 rounded-md">
-            <!-- Sidebar Count Section -->
-            <div class="header-navigation flex gap-2">
-                <button class="h-[22px] w-[100px] flex justify-center items-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="header-favourite-count">0</span> <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-4 h-4"></button>
-                <button class="coin-btn h-[22px] w-[100px] flex items-center justify-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="coin-life" >100</span><img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-4 h-4"></button>
-                <button class="header-copy-count h-[22px] w-[100px] rounded-2xl font-bold text-sm bg-[#00a63e] text-white text-center font-semibold border-none"> <span id="header-copy-count">0</span> Copy</button>
-            </div>
-
-            <!-- Sidebar Call History Section -->
-
-            <div id="call-history-section" class="call-history-section w-full h-full mt-3 rounded-md box-border ">
-            <div class="call-history-header flex justify-between w-full max-h-26">
-                <div class="call-history-title flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-sm text-white"></i>
-                    <p class="font-semibold text-sm text-white">Call History</p>
-                </div>
-                <div id="call-history-clear-btn">
-                    <button class="bg-[#00a63e] text-white rounded-2xl h-[25px] w-[60px] active:translate-y-[1px] active:translate-x-[1px] border-none cursor-pointer hover:bg-green-700 text-sm">Clear</button>
-                </div>
-            </div>
-
-            <div id="call-history-body" class="w-full h-[200px] mt-8 overflow-scroll text-white">
-
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!---------------------------------------------------- 
-                    Sidebar Section End
-    ------------------------------------------------------->
     <section>
         <header>
             <nav class="header-section max-w-[1280px] h-18 mx-auto flex justify-between items-center p-2 md:p-0">
@@ -296,6 +261,44 @@
         <!-- Call History Section End -->
     </section>
     <!-- Emergency Call Card Design End -->
+
+
+
+    <!---------------------------------------------------- 
+                    Sidebar Section Start
+    ------------------------------------------------------->
+    <section>
+        <div id="sidebar-section-pan-mobile" class="md:hidden block sidebar max-w-[60%] backdrop-blur-md h-[330px] p-2 absolute right-[70%] top-[1%] opacity-0 rounded-md">
+            <!-- Sidebar Count Section -->
+            <div class="header-navigation flex gap-2">
+                <button class="h-[22px] w-[100px] flex justify-center items-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="header-favourite-count-mobile">0</span> <img src="assets/heart.png" alt="Favorite Contact Picture" class="w-4 h-4"></button>
+                <button class="coin-btn h-[22px] w-[100px] flex items-center justify-center rounded-2xl font-bold text-sm gap-1 bg-[#ecfff0] border-none"> <span id="coin-life-mobile" >100</span><img src="assets/coin.png" alt="Reamining Life (Coin)" class="w-4 h-4"></button>
+                <button class="header-copy-count h-[22px] w-[100px] rounded-2xl font-bold text-sm bg-[#00a63e] text-white text-center font-semibold border-none"> <span id="header-copy-count-mobile">0</span> Copy</button>
+            </div>
+
+            <!-- Sidebar Call History Section -->
+
+            <div id="call-history-section-mobile" class="call-history-section w-full h-full mt-3 rounded-md box-border ">
+                <div class="call-history-header flex justify-between w-full max-h-26">
+                    <div class="call-history-title flex items-center gap-2">
+                        <i class="fa-regular fa-clock text-sm text-white"></i>
+                        <p class="font-semibold text-sm text-white">Call History</p>
+                    </div>
+                    <div id="call-history-clear-btn-mobile">
+                        <button class="bg-[#00a63e] text-white rounded-2xl h-[25px] w-[60px] active:translate-y-[1px] active:translate-x-[1px] border-none cursor-pointer hover:bg-green-700 text-sm">Clear</button>
+                    </div>
+                </div>
+
+                <div id="call-history-body-mobile" class="w-full h-[200px] mt-8 overflow-scroll text-white">
+
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!---------------------------------------------------- 
+                    Sidebar Section End
+    ------------------------------------------------------->
 
     <script src="app-functionality.js"></script>
 </body>

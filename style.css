@@ -68,7 +68,7 @@
 /* Three Vertical Design End */
 
 /* Sidebar show when click */
-#sidebar-section-pan.activate-pan{
+#sidebar-section-pan-mobile.activate-pan{
     right: 1%;
     top: 2.3%;
     display: block;
