@@ -57,13 +57,13 @@
     transform: rotate(42deg);
     transform-origin: top left;
     transition: 0.3s ease-in-out;
-    width: 45px;
+    width: 34px;
 }
 .three-horizontal.activate-button .horizontal-three {
     transform: rotate(-42deg);
     transform-origin: bottom left;
     transition: 0.3s ease-in-out;
-    width: 45px;
+    width: 34px;
 }
 /* Three Vertical Design End */
 
